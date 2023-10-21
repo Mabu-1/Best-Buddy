@@ -24,7 +24,7 @@ const Update = () => {
         };
 
         // Send data to the server
-        fetch(`http://localhost:5000/products/${_id}`, {
+        fetch(`https://best-buddy-server.vercel.app/products/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

@@ -5,7 +5,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 
 import PrivateRoute from "./PrivateRoute";
-import AboutUs from "../pages/AboutUs/AboutUs";
+
 import AddProduct from "../pages/AddProduct/AddProduct";
 import BrandPage from "../pages/BrandPage/BrandPage";
 import Update from "../pages/Update.jsx/Update";
@@ -35,10 +35,7 @@ const router =createBrowserRouter([
             path:'/register',
             element:<Register></Register>
            },
-           {
-            path:'/about',
-            element:<PrivateRoute><AboutUs></AboutUs></PrivateRoute>
-           },
+         
            {
             path:'/add',
             element:<PrivateRoute><AddProduct></AddProduct></PrivateRoute>
@@ -46,27 +43,27 @@ const router =createBrowserRouter([
            {
             path:'/brands/:brand',
             element:<PrivateRoute><BrandPage></BrandPage></PrivateRoute>,
-            loader: () => fetch('http://localhost:5000/products')
+            loader: () => fetch('https://best-buddy-server.vercel.app/products')
            
            },
            {
             path:'/update/:id',
             element:<PrivateRoute><Update></Update></PrivateRoute>,
-            loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+            loader: ({params}) => fetch(`https://best-buddy-server.vercel.app/products/${params.id}`)
         
            
            },
            {
             path:'/product/:id',
             element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-            loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+            loader: ({params}) => fetch(`https://best-buddy-server.vercel.app/products/${params.id}`)
         
            
            },
            {
             path:'/mycart',
             element:<PrivateRoute><MyCart></MyCart></PrivateRoute>,
-            loader: () => fetch('http://localhost:5000/client')
+            loader: () => fetch('https://best-buddy-server.vercel.app/client')
         
            
            },

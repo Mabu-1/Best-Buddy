@@ -60,14 +60,7 @@ const {_id,name,image,description,price,rating,type} =client;
  </div>
 
 
-<div className="flex justify-center">
-<div className="">
-    <Link to={`/update/${_id}`}>
-      <button className="btn bg-[#392ea0] p-1 w-32 h-10">Update</button>
-    </Link>
-  </div>
-  
-</div>
+
 
 </div>
 

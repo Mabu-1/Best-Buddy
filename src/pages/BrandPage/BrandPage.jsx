@@ -9,6 +9,7 @@ const BrandPage = () => {
   const { brand } = useParams();
 
   const product = products.filter((product) => product.brand === brand);
+  
 
   if (product.length === 0) {
     return (
@@ -34,7 +35,7 @@ const BrandPage = () => {
         </Marquee>
       </div>
 
-      <div className="mt-4 " data-aos="fade-right">
+      <div className="mt-4 ">
            <h1 className="text-center text-4xl font-bold mb-4 "> <span className="text-[#FFB807] ml-2">{product.brand}</span> Products</h1>
                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                    {

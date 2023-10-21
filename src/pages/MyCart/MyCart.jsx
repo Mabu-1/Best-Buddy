@@ -28,9 +28,9 @@ const MyCart = () => {
 
   return (
     <div className="mt-4 mb-4">
-   
+   <h1 className="text-3xl">{client.brand}</h1>
      
-      <div className="mt-4 " data-aos="fade-right">
+      <div className="mt-4 " >
            <h1 className="text-center text-4xl font-bold mb-4 "> <span className="text-[#FFB807] ml-2">{client.brand}</span> Products</h1>
                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                    {

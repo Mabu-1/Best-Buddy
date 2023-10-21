@@ -32,7 +32,7 @@ const ProductDetails = () => {
         };
    
     try {
-        const res = await axios.post("http://localhost:5000/client", myData);
+        const res = await axios.post("https://best-buddy-server.vercel.app/client", myData);
         if (res.data.acknowledged) {
             Swal.fire({
                 position: 'top-center',
