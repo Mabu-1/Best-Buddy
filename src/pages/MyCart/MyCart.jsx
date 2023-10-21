@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 
 import Card1 from "./Card1";
 import { PiSmileySadThin } from 'react-icons/pi'
@@ -8,9 +8,6 @@ const MyCart = () => {
   const clients = useLoaderData();
   const { user } = useContext(AuthContext);
   const email=user.email;
-  
- 
-
   const client = clients.filter((client) => client.email ===email );
 
   if (client.length === 0) {
