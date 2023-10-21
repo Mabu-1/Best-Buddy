@@ -126,7 +126,7 @@ const Login = () => {
             </form>
             <div className="flex justify-center">
            
-                    <button onClick={ () => handleGoogleSignIn(googleLogin)}  className="btn btn-secondary mt-3 w-[400px] md:w-[600px] lg:w-[770px]"><FcGoogle className="text-4xl"></FcGoogle></button>
+                    <button onClick={ () => handleGoogleSignIn(googleLogin)}  className="btn btn-secondary mt-3 md:w-3/4 lg:w-1/2 mx-auto"><FcGoogle className="text-4xl"></FcGoogle></button>
                 
             </div>
           
