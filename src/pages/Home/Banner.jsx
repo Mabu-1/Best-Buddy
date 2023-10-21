@@ -28,8 +28,7 @@ const Banner = () => {
            <i> <b className='text-6xl ml-[20px] text-[#4c63f4]'  data-aos="fade-left"
                 data-aos-delay="800">Imagination</b></i>
             </h2>
-            <Link to='/about'><button className='btn btn-secondary mt-4'  data-aos="fade-left"
-                data-aos-delay="1000">About Us <span><AiOutlineArrowRight className='text-lg'></AiOutlineArrowRight></span></button></Link> 
+           
             </div>
             <div>
           

@@ -1,9 +1,10 @@
 import { AiFillStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Swal from 'sweetalert2';
 
-
-const Card = ({product}) => {
+const Card = ({product,setProduct}) => {
 const {_id,name,image,description,price,rating,type} =product;
+
 
     return (
         <div className="px-3">
@@ -66,14 +67,17 @@ const {_id,name,image,description,price,rating,type} =product;
       <button className="btn bg-[#392ea0] p-1 w-32 h-10">Update</button>
     </Link>
   </div>
+
   
+</div>
+
 </div>
 
 </div>
 
         </div>
        
-        </div>
+     
         
  
     );

@@ -5,11 +5,12 @@ import Card from "./Card";
 import { PiSmileySadThin } from 'react-icons/pi'
 const BrandPage = () => {
   const products = useLoaderData();
+ 
 
   const { brand } = useParams();
-
+ 
   const product = products.filter((product) => product.brand === brand);
-  
+ 
 
   if (product.length === 0) {
     return (
