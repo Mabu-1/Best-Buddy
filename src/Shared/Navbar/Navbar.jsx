@@ -21,6 +21,14 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/add"
+
+        >
+          Add Product
+        </NavLink>
+      </li>
     
       <li>
         <NavLink
@@ -38,8 +46,8 @@ const Navbar = () => {
     <div className="navbar ">
       <div className="navbar-start">
         <Link to='/'> <img
-          className="w-[130px]  hidden md:block lg:block"
-          src="https://i.ibb.co/S6Q3Vv7/logo.png"
+          className="w-[230px]  hidden md:block lg:block"
+          src="https://i.ibb.co/QNDg5ZB/cover-removebg-preview.png"
           alt=""
         /></Link>
         <div className="dropdown">

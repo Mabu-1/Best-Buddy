@@ -5,14 +5,14 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCRZegUnvEyTHdYpBX48DltJI86OSfd4vs",
-  authDomain: "best-buddy-a42a3.firebaseapp.com",
-  projectId: "best-buddy-a42a3",
-  storageBucket: "best-buddy-a42a3.appspot.com",
-  messagingSenderId: "926565074924",
-  appId: "1:926565074924:web:8ab930ad8a1f9523d622c9"
+  apiKey: "AIzaSyBoXeQQj1RQE2tEHRGzRtn7VopQ2OoFU60",
+  authDomain: "best-buddy-bd01d.firebaseapp.com",
+  projectId: "best-buddy-bd01d",
+  storageBucket: "best-buddy-bd01d.appspot.com",
+  messagingSenderId: "883971911199",
+  appId: "1:883971911199:web:57edd7f592c8e2dc12af2a"
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig)
 export default app;
