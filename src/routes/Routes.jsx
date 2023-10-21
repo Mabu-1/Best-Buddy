@@ -9,6 +9,8 @@ import AboutUs from "../pages/AboutUs/AboutUs";
 import AddProduct from "../pages/AddProduct/AddProduct";
 import BrandPage from "../pages/BrandPage/BrandPage";
 import Update from "../pages/Update.jsx/Update";
+import ProductDetails from "../pages/ProductDetails/ProductDetails";
+import MyCart from "../pages/MyCart/MyCart";
 
 
 
@@ -51,6 +53,20 @@ const router =createBrowserRouter([
             path:'/update/:id',
             element:<PrivateRoute><Update></Update></PrivateRoute>,
             loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+        
+           
+           },
+           {
+            path:'/product/:id',
+            element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
+            loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+        
+           
+           },
+           {
+            path:'/mycart',
+            element:<PrivateRoute><MyCart></MyCart></PrivateRoute>,
+            loader: () => fetch('http://localhost:5000/client')
         
            
            },
